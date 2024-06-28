@@ -1,14 +1,17 @@
 const express = require('express');
 const cors = require('cors');
 const { connectToDB } = require('./database/db');
+const projectController = require('./controllers/project');
 const app = express();
 
 //DB connection
 connectToDB();
 
 //index route
-app.get('/projects', (req, res)=>{
-    res.send();
+app.get('/projects', async(req, res)=>{
+    let result = await projectController.getAll();
+    res.send(result);
+    // console.log(result);
 });
 
 //create route
