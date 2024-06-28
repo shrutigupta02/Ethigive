@@ -1,4 +1,4 @@
-import img from "../../assets/main.jpg"
+import img from "../assets/main.jpg"
 
 export default function BackgroundImage(){
     return(
