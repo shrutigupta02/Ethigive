@@ -2,7 +2,7 @@ const mongoose=require("mongoose")
 const {Schema}=mongoose
 
 const projectSchema= new Schema({
-    name:{
+    charityname:{
         type:String,
         required:true
     },
@@ -14,7 +14,7 @@ const projectSchema= new Schema({
         type:Number,
         required:true
     },
-    images:{
+    image:{
         type:[String],
         required:true
     },

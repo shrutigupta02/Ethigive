@@ -11,7 +11,7 @@ connectToDB();
 app.get('/projects', async(req, res)=>{
     let result = await projectController.getAll();
     res.send(result);
-    // console.log(result);
+    console.log(result);
 });
 
 //create route
