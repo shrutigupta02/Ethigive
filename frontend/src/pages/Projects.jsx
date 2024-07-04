@@ -12,10 +12,11 @@ export default function Projects() {
             <div className="main-section">
                 <BackgroundImage />
                 <div className="main-text">
-                    <h2>Projects</h2>
+                    <h2>PROJECTS:</h2>
+                    <CardSlider/>
                 </div>
             </div>
-            <CardSlider />
+            
             <Footer />
         </div>
     );
