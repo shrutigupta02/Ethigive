@@ -20,6 +20,7 @@ const projectSchema= new Schema({
     },
     amountRaised:{
         type:Number,
+        default: 0
     }
 });
 
