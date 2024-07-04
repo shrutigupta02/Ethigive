@@ -22,7 +22,7 @@ export default function ImgMediaCard({title, description,location,  image}) {
       <CardMedia
         className='img'
         component="img"
-        height="140"
+        height="210"
         image={image}
       />
       <CardContent>
