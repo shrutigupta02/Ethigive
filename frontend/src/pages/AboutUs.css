@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.columns ul {
+    list-style-type: none;
+    padding: 0;
+    width: 48%;
+}
