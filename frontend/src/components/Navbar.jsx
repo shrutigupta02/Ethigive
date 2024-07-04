@@ -5,7 +5,8 @@ export default function Navbar() {
   const pages = [
     { name: "Home", link: "/" },
     { name: "Projects", link: "/projects" },
-    { name: "About Us", link: "/us" }
+    { name: "About Us", link: "/us" },
+    { name: "Register", link: "/register" },
   ];
   const navigate = useNavigate();
 

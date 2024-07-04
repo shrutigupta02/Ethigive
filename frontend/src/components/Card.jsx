@@ -7,8 +7,16 @@ import Typography from '@mui/material/Typography';
 import './Card.css';
 
 export default function ImgMediaCard({title, description}) {
+  const styles = {
+    backgroundColor: 'rgb(0, 0, 0, 0.3)',
+    color: 'white',
+    margin: '10px'
+  }
+
+
   return (
     <Card
+      style={styles}
       className='card'
       sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -17,16 +25,13 @@ export default function ImgMediaCard({title, description}) {
         height="140"
         image="/static/images/cards/contemplative-reptile.jpg"
       />
-      <CardContent
-        className='text'
-      >
+      <CardContent>
         <Typography 
-          className='title'
           gutterBottom variant="h5" component="div">
           {title}
         </Typography>
         <Typography 
-          className='description'
+          style={{color:'whitesmoke'}}
           variant="body2" color="text.secondary">
           {description}
         </Typography>
