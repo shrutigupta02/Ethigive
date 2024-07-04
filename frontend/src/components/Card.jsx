@@ -16,7 +16,7 @@ export default function ImgMediaCard({title, description,location, id, image}) {
   }
 
   const getProject = (id)=>{
-    navigate('/'+id);
+    navigate('/projects/'+id);
   }
 
   return (
