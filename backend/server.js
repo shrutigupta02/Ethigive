@@ -6,12 +6,15 @@ const app = express();
 
 //DB connection
 connectToDB();
+
+//cors
+app.use(cors());
  
 //index route
 app.get('/projects', async(req, res)=>{
     let result = await projectController.getAll();
     res.json(result);
-    // console.log(result);
+    // console.log(result); 
 });
 
 //create route
