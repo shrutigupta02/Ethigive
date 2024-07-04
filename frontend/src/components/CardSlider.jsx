@@ -12,7 +12,7 @@ export default function ResponsiveGrid( {projects}) {
         {projects.map((project)=>(
           <ImgMediaCard
           key={project._id}
-           title={project.charityname}  description={project.description} image={project.image} location={project.location}/>
+           title={project.charityname}  description={project.description} image={project.image} id={project._id} location={project.location}/>
         ))}
       </Grid>
     </Box>
