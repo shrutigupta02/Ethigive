@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Card.css';
 
-export default function ImgMediaCard({title, description, image}) {
+export default function ImgMediaCard({title, description,location,  image}) {
   const styles = {
     backgroundColor: 'rgb(0, 0, 0, 0.3)',
     color: 'white',
@@ -29,6 +29,11 @@ export default function ImgMediaCard({title, description, image}) {
         <Typography 
           gutterBottom variant="h5" component="div">
           {title}
+        </Typography>
+        <Typography 
+          style={{color:'whitesmoke'}}
+          variant="body2" color="text.secondary">
+          {location}
         </Typography>
         <Typography 
           style={{color:'whitesmoke'}}
