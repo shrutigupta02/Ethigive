@@ -30,7 +30,7 @@ exports.getOne = async(req, res) => {
         if(!result){
             return res.status(404).json({message: 'Project not found'});
         }
-        res.json(result);
+        return result;
     } catch{
         console.log(error);
         res.json({message:'Error updating product, please try again later'});
