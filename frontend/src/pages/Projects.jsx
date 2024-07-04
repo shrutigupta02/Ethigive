@@ -9,10 +9,10 @@ export default function Projects() {
     return (
         <div className='container'>
             <Navbar />
-            <div className="hero-section">
+            <div className="main-section">
                 <BackgroundImage />
-                <div className="hero-text">
-                    <h2>PROJECTS</h2>
+                <div className="main-text">
+                    <h2>Projects</h2>
                 </div>
             </div>
             <CardSlider />
