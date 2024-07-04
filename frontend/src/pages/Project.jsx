@@ -1,3 +1,4 @@
+
 import React from "react";
 import Navbar from "../components/Navbar";
 import { useParams } from "react-router-dom";
@@ -25,6 +26,7 @@ export default function Project() {
             .catch(err => {
                 console.log(err); // Handle error
             });
+
     }, [id]); // Dependency array ensures the effect runs only once when 'id' changes
 
     return (
@@ -41,3 +43,4 @@ export default function Project() {
         </div>
     );
 }
+
