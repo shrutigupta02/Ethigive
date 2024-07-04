@@ -4,25 +4,41 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import './Card.css';
 
 export default function ImgMediaCard({title, description}) {
+  const styles = {
+    backgroundColor: 'rgb(0, 0, 0, 0.3)',
+    color: 'white',
+    margin: '10px'
+  }
+
+
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card
+      style={styles}
+      className='card'
+      sx={{ maxWidth: 345 }}>
       <CardMedia
+        className='img'
         component="img"
-        alt="green iguana"
         height="140"
         image="/static/images/cards/contemplative-reptile.jpg"
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography 
+          gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography 
+          style={{color:'whitesmoke'}}
+          variant="body2" color="text.secondary">
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
+      <CardActions
+        className='buttons'
+      >
         <Button size="small">Donate</Button>
         <Button size="small">Learn More</Button>
       </CardActions>

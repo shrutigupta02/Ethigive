@@ -1,0 +1,39 @@
+.app-bar {
+    box-shadow: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    margin-top: 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 40%;
+}
+
+.nav-item {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: color 0.3s;
+    position: relative;
+    padding: 5px;
+    
+    text-transform: uppercase;
+}
+
+.nav-item:hover {
+    color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
