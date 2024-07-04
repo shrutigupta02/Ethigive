@@ -4,15 +4,20 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useNavigate } from 'react-router-dom';
 import './Card.css';
 
-export default function ImgMediaCard({title, description,location,  image}) {
+export default function ImgMediaCard({title, description,location, id, image}) {
+  const navigate = useNavigate();
   const styles = {
     backgroundColor: 'rgb(0, 0, 0, 0.3)',
     color: 'white',
     margin: '10px'
   }
 
+  const getProject = (id)=>{
+    navigate('/projects/'+id);
+  }
 
   return (
     <Card
@@ -22,7 +27,7 @@ export default function ImgMediaCard({title, description,location,  image}) {
       <CardMedia
         className='img'
         component="img"
-        height="140"
+        height="210"
         image={image}
       />
       <CardContent>
@@ -45,7 +50,9 @@ export default function ImgMediaCard({title, description,location,  image}) {
         className='buttons'
       >
         <Button size="small">Donate</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small"
+        onClick={()=> getProject(id)}
+        >Learn More</Button>
       </CardActions>
     </Card>
   );

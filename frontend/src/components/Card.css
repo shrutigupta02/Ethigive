@@ -21,3 +21,7 @@
 .MuiCard-root{
     background-color: rgba(0, 0, 0, 0.8);
 }
+
+.img{
+    border-radius: 16px;
+}
