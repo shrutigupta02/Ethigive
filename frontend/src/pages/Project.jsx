@@ -30,7 +30,7 @@ export default function Project() {
     }, [id]); // Dependency array ensures the effect runs only once when 'id' changes
 
     return (
-        <div className='container'>
+        <div className='project-container'>
             <Navbar />
             <div className='project-details'>
                 <h1>{project.charityname}</h1>

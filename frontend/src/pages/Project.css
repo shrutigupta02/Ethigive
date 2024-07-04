@@ -1,11 +1,14 @@
 /* Project.css */
 
-.container {
+.project-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 .project-details {
