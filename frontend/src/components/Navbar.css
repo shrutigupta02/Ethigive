@@ -16,7 +16,7 @@
     padding: 5px;
     border: 2px solid white;
     border-radius: 40px;
-    width: 40%;
+    width: fit-content;
 }
 
 .nav-item {
