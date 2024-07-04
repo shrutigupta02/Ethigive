@@ -10,7 +10,7 @@ const validationSchema = Yup.object().shape({
     charityname: Yup.string().required('Charity name is required'),
     description: Yup.string().required('Description is required'),
     location: Yup.string().required('Location is required'),
-    image: Yup.string().url('Invalid URL').required('Image URL is required')
+    image: Yup.string().required('Image URL is required')
 });
 
 export default function Register() {
@@ -21,9 +21,12 @@ export default function Register() {
         image: ''
     };
 
-    const handleSubmit = (values, { setSubmitting }) => {
+    const handleSubmit = (values, { setSubmitting, resetForm }) => {
         console.log(values);
-        setSubmitting(false);
+        axios.post('http://localhost:1234/projects', values)
+                .then(result => console.log("Success")) // Handle success response
+                .catch(err => console.error(err)); // Handle error
+        resetForm();
     };
 
     return (
