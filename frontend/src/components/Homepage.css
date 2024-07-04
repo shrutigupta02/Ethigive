@@ -21,6 +21,7 @@ body, html {
 .hero-text h1 {
     font-size: 4rem;
     margin: 0;
+    letter-spacing: 0.7rem;
 }
 
 .hero-text p {

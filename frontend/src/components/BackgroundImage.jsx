@@ -5,6 +5,9 @@ export default function BackgroundImage() {
     return (
         <div className="background-container">
             <img src={img} alt="Background" className="background-image" />
+            <div
+                className="cover"
+            ></div>
         </div>
     );
 }
