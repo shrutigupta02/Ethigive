@@ -6,11 +6,11 @@ const app = express();
 
 //DB connection
 connectToDB();
-
+ 
 //index route
 app.get('/projects', async(req, res)=>{
     let result = await projectController.getAll();
-    res.send(result);
+    res.json(result);
     // console.log(result);
 });
 
