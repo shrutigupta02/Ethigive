@@ -31,5 +31,5 @@ export default function Projects() {
             <CardSlider projects={projects} /> {/* Pass the fetched projects to CardSlider */}
             <Footer />
         </div>
-    );
+    ); 
 }
