@@ -1,6 +1,7 @@
 import ResponsiveAppBar from './Navbar';
 import BackgroundImage from './BackgroundImage';
 import CardSlider from './CardSlider';
+import Footer from './Footer';
 import './Homepage.css';
 
 export default function Homepage() {
@@ -15,6 +16,7 @@ export default function Homepage() {
                 </div>
             </div>
             <CardSlider />
+            <Footer/>
         </>
     );
 }
