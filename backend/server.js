@@ -32,8 +32,14 @@ app.post('/projects', (req, res)=>{
 });
 
 //show route 
-app.get('/projects/:id', (req, res)=>{
-    res.send();
+app.get('/projects/:id', async(req, res)=>{
+    try{
+        let result = await projectController.getOne(req, res);
+    res.json(result);
+    } catch (error) {
+        res.status(500).json({ message: 'Error fetching projects, please try again later' });
+    }
+    
 });
 
 app.listen(1234, ()=>{
