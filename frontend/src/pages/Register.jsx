@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import BackgroundImage from "../components/BackgroundImage";
 import './Register.css';
+import axios from 'axios';
 
 const validationSchema = Yup.object().shape({
     charityname: Yup.string().required('Charity name is required'),
