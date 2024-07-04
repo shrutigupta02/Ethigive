@@ -1,13 +1,12 @@
-import ResponsiveAppBar from './Navbar';
-import BackgroundImage from './BackgroundImage';
-import CardSlider from './CardSlider';
-import Footer from './Footer';
+import Navbar from '../components/Navbar';
+import BackgroundImage from '../components/BackgroundImage';
+import Footer from '../components/Footer';
 import './Homepage.css';
 
 export default function Homepage() {
     return (
-        <>
-            <ResponsiveAppBar />
+        <div className='container'>
+            <Navbar/>
             <div className="hero-section">
                 <BackgroundImage />
                 <div className="hero-text">
@@ -15,8 +14,8 @@ export default function Homepage() {
                     <p>EMPOWER GIVING, EMBRACE TRANSPARENCY</p>
                 </div>
             </div>
-            <CardSlider />
+            
             <Footer/>
-        </>
+        </div>
     );
 }
