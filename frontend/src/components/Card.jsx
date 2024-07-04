@@ -6,7 +6,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Card.css';
 
-export default function ImgMediaCard({title, description}) {
+export default function ImgMediaCard({title, description,location,  image}) {
   const styles = {
     backgroundColor: 'rgb(0, 0, 0, 0.3)',
     color: 'white',
@@ -23,12 +23,17 @@ export default function ImgMediaCard({title, description}) {
         className='img'
         component="img"
         height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
+        image={image}
       />
       <CardContent>
         <Typography 
           gutterBottom variant="h5" component="div">
           {title}
+        </Typography>
+        <Typography 
+          style={{color:'whitesmoke'}}
+          variant="body2" color="text.secondary">
+          {location}
         </Typography>
         <Typography 
           style={{color:'whitesmoke'}}
