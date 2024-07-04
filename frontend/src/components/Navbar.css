@@ -23,6 +23,7 @@
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
+    font-weight: 600;
     margin: 0 20px;
     cursor: pointer;
     transition: color 0.3s;
