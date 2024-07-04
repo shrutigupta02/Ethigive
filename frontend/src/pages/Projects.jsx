@@ -5,7 +5,7 @@ import BackgroundImage from '../components/BackgroundImage';
 import Footer from '../components/Footer';
 import CardSlider from '../components/CardSlider';
 import './Projects.css';
-
+ 
 export default function Projects() {
     const [projects, setProjects] = useState([]);
 
