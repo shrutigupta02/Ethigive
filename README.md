@@ -34,7 +34,7 @@ EthiGive is a blockchain-based charity donation platform developed during the Re
 ## Usage
 
 1. Open your browser and navigate to `http://localhost:5173` to access the frontend.
-2. Open your browser and navigate to `http://localhost:1234` to access the frontend.
+2. Open your browser and navigate to `http://localhost:1234` to access the backend.
 
 Note: Please note that EthiGive is currently in development and was built during a 24-hour hackathon. Some blockchain functionalities are not yet complete. If you check the blockchain, you might find incomplete functionalities. However, the contract and deployment script are complete and were deployed using terminal commands to locally deploy the contract.
 
